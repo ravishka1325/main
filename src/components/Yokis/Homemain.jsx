@@ -27,10 +27,10 @@ const Homemain = ({ title, description, imageUrl, isActive }) => {
               <Ticket className="icon" />
               Buy Tickets
             </Link>
-            <button className="btn btn-primary">
+            <Link to="/" className="btn btn-primary"> {/* Changed to "/booking" */}
               <Play className="icon" />
               Watch Trailer
-            </button>
+            </Link>
           </div>
         </div>
       </div>
