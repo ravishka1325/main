@@ -6,13 +6,13 @@ const slides = [
     id: 1,
     title: "Red One",
     description: "When a villain kidnaps Santa Claus from the North Pole, an E.L.F. (Extremely Large and Formidable) operative joins forces with the world's most accomplished tracker to find him and save Christmas.",
-    imageUrl: "https://iso.500px.com/wp-content/uploads/2016/11/stock-photo-159533631-1500x1000.jpg"
+    imageUrl: "https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/04/stranger-things-cartoon.jpg"
   },
   {
     id: 2,
     title: "Holiday Adventure",
     description: "Join the most epic holiday adventure of the year as our heroes race against time to save the spirit of Christmas.",
-    imageUrl: "https://cdn.mos.cms.futurecdn.net/3JCaEkiSwWKAwgLMjpChF3.jpg"
+    imageUrl: "https://miro.medium.com/v2/resize:fit:13000/1*O7VIrvdMHe0Jg6CAOJ4x9Q.jpeg"
   }
 ];
 
