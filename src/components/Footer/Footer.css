@@ -9,8 +9,9 @@
     gap: 2rem;
   }
   .footer-logo {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 5rem;
+    
+    color: rgb(255, 255, 255);
   }
   .footer-links {
     display: flex;
@@ -22,7 +23,8 @@
     gap: 1rem;
   }
   .footer-section a {
-    color: var(--text-secondary);
+    color: #000000 var(--text-secondary);
+    font-weight: bold;
     text-decoration: none;
     transition: color 0.2s;
   }
@@ -47,7 +49,7 @@
     justify-content: center;
     color: var(--text-primary);
     text-decoration: none;
-    transition: background-color 0.2s;
+    transition: background-color 0.5s;
   }
   .social-icon:hover {
     background-color: var(--text-primary);
@@ -55,10 +57,11 @@
   }
   .footer-bottom {
     margin-top: 4rem;
-    padding: 1.5rem 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.1rem 0;
+    border-top: 1px solid rgba(255, 0, 0, 0.1);
     text-align: center;
-    color: var(--text-secondary);
+    color: #000000 var(--text-secondary);
+    font-weight: 600;
     background-color: #F1F1E7;
   }
   @media (max-width: 768px) {
