@@ -1,103 +1,99 @@
+/* Centering the Entire `.showtime-selector` */
 .showtime-selector {
-    margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column; /* Stack child elements vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  text-align: center; /* Align text inside elements */
+  margin: 0 auto; /* Center the `.showtime-selector` container itself */
+  margin-bottom: 3rem;
+}
+
+/* Styling the Header */
+.showtime-selector h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Centering the `.date-selector` */
+.date-selector {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  gap: 1rem; /* Spacing between buttons */
+  margin-bottom: 2rem;
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  padding-bottom: 1rem;
+}
+
+/* Centering Buttons */
+.date-button,
+.time-button {
+  display: flex; /* Enable flexbox for content alignment */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  text-align: center; /* Ensure text alignment */
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  min-width: 120px;
+  background: var(--button-gray);
+  color: var(--text-primary);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+/* Highlighting Selected Buttons */
+.date-button.selected,
+.time-button.selected {
+  background: var(--accent-red);
+  transform: scale(1.05); /* Slightly enlarge selected button */
+}
+
+/* Hover Effect for Buttons */
+.time-button:hover {
+  background: var(--accent-red);
+}
+
+/* Theater and Times Styling */
+.theaters {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.theater h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.format {
+  margin-bottom: 1.5rem;
+}
+
+.format h4 {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.times {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for multiple time buttons */
+  gap: 1rem;
+}
+
+/* Responsive Styling for Mobile Devices */
+@media (max-width: 768px) {
+  .showtime-selector {
+    align-items: center; /* Keep centered alignment */
   }
-  
-  .showtime-selector h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  
+
   .date-selector {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    overflow-x: auto;
-    padding-bottom: 1rem;
+    justify-content: center; /* Center date buttons */
+    gap: 0.5rem; /* Reduce spacing for smaller screens */
   }
-  
+
   .date-button {
-    background: var(--button-gray);
-    color: var(--text-primary);
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    min-width: 120px;
-    transition: background-color 0.2s;
+    min-width: 100px; /* Smaller minimum width */
+    padding: 0.5rem 1rem; /* Adjust padding */
   }
-  
-  .date-button.selected {
-    background: var(--accent-red);
-  }
-  
-  .date-label {
-    font-size: 0.8rem;
-    margin-bottom: 0.25rem;
-  }
-  
-  .date-value {
-    font-weight: 500;
-  }
-  
-  .theaters {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .theater h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-  }
-  
-  .format {
-    margin-bottom: 1.5rem;
-  }
-  
-  .format h4 {
-    color: var(--text-secondary);
-    font-size: 1rem;
-    margin-bottom: 0.75rem;
-  }
-  
-  .times {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
-  .time-button {
-    background: var(--button-gray);
-    color: var(--text-primary);
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: all 0.2s;
-  }
-  
-  .time-button:hover {
-    background: var(--accent-red);
-  }
-  
-  .time-button.selected {
-    background: var(--accent-red);
-    transform: scale(1.05);
-  }
-  
-  @media (max-width: 768px) {
-    .movie-details {
-      flex-direction: column;
-    }
-  
-    .movie-poster {
-      width: 100%;
-      max-width: 300px;
-      margin: 0 auto;
-    }
-  
-    .date-selector {
-      gap: 0.5rem;
-    }
-  
-    .date-button {
-      min-width: 100px;
-      padding: 0.5rem 1rem;
-    }
-  }
+}
