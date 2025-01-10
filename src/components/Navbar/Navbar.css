@@ -103,3 +103,7 @@
   .signup-button:hover {
     background-color: rgb(185, 28, 28);
   }
+
+ a {
+    text-decoration: none;
+}
