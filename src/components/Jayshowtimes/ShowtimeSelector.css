@@ -1,38 +1,36 @@
-/* Centering the Entire `.showtime-selector` */
 .showtime-selector {
   display: flex;
-  flex-direction: column; /* Stack child elements vertically */
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
-  text-align: center; /* Align text inside elements */
-  margin: 0 auto; /* Center the `.showtime-selector` container itself */
-  margin-bottom: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    align-items: flex-start;
+    width: 70%; 
+  
 }
 
-/* Styling the Header */
+
 .showtime-selector h2 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
-/* Centering the `.date-selector` */
 .date-selector {
   display: flex;
-  justify-content: center; /* Horizontal centering */
-  align-items: center; /* Vertical centering */
-  gap: 1rem; /* Spacing between buttons */
+  justify-content: center; 
+  align-items: center; 
+  gap: 1rem; 
   margin-bottom: 2rem;
-  overflow-x: auto; /* Allow horizontal scrolling if needed */
   padding-bottom: 1rem;
 }
 
-/* Centering Buttons */
 .date-button,
 .time-button {
-  display: flex; /* Enable flexbox for content alignment */
-  justify-content: center; /* Center text horizontally */
-  align-items: center; /* Center text vertically */
-  text-align: center; /* Ensure text alignment */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
   padding: 0.75rem 1.5rem;
   border-radius: 4px;
   min-width: 120px;
@@ -41,19 +39,17 @@
   transition: background-color 0.2s, transform 0.2s;
 }
 
-/* Highlighting Selected Buttons */
 .date-button.selected,
 .time-button.selected {
   background: var(--accent-red);
-  transform: scale(1.05); /* Slightly enlarge selected button */
+  transform: scale(1.05); 
 }
 
-/* Hover Effect for Buttons */
+
 .time-button:hover {
   background: var(--accent-red);
 }
 
-/* Theater and Times Styling */
 .theaters {
   display: flex;
   flex-direction: column;
@@ -77,23 +73,23 @@
 
 .times {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping for multiple time buttons */
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
-/* Responsive Styling for Mobile Devices */
+
 @media (max-width: 768px) {
   .showtime-selector {
-    align-items: center; /* Keep centered alignment */
+    align-items: center; 
   }
 
   .date-selector {
-    justify-content: center; /* Center date buttons */
-    gap: 0.5rem; /* Reduce spacing for smaller screens */
+    justify-content: center; 
+    gap: 0.5rem; 
   }
 
   .date-button {
-    min-width: 100px; /* Smaller minimum width */
-    padding: 0.5rem 1rem; /* Adjust padding */
+    min-width: 100px; 
+    padding: 0.5rem 1rem; 
   }
 }

@@ -1,12 +1,14 @@
-.movie-details {
-    display: flex;
+.movie-details{
+  display: flex;
     gap: 2rem;
     margin-bottom: 3rem;
-  }
+    justify-content: center;
+    width: 70%;
+}
   
   .movie-poster {
-    width: 250px;
-    height: auto;
+    width: 200px;
+    height: 300px;
     border-radius: 8px;
   }
   
@@ -19,6 +21,7 @@
   .movie-info h1 {
     font-size: 2.5rem;
     font-weight: bold;
+    color: #ffffff;
   }
   
   .movie-meta {

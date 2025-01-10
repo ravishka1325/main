@@ -4,6 +4,7 @@ import Home1 from './Pages/home';
 import Navbar from './components/Navbar/Navbar';
 import MovieBooking from './Pages/MovieBooking'; // Import the MovieBooking component
 import Footer from './components/Footer/Footer';
+import RegistrationForm from './components/RegistrationForm/RegistrationForm';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home1 />} />
             <Route path="/booking" element={<MovieBooking />} /> {/* Add this route */}
+            <Route path="/RegistrationForm" element={<RegistrationForm />} />
           </Routes>
           <Footer/>
         </div>

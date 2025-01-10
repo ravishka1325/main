@@ -1,0 +1,84 @@
+.registration-container {
+    padding: 120px 20px 60px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .form-header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: white;
+    font-style: bold;
+  }
+  
+  .form-header h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+
+  }
+  
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 16px 0;
+  }
+  
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #A80000 var(--text-gray);
+    font-size: 14px;
+    color: #ffffff;
+    font-style: bold;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+  }
+  
+  .submit-btn {
+    background: #A80000;
+    text-align: center !important;
+    color: #ffffff;
+    padding: 16px;
+    border: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+    width: 200px;
+    height: 40px;
+    justify-content: center;
+  }
+
+  select option {
+    background-color: var(--secondary-dark);
+  }
+
+  hr {
+    border: 2px solid #ffffff;
+    margin: 50px 0;
+    margin-top: 10px;
+    width: 460px;
+  }
+
+  input{
+    height: 40px;
+  }

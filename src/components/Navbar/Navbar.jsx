@@ -14,17 +14,17 @@ const Navbar = () => {
             <NavLink href="/" >Home</NavLink>
             <NavLink href="/movies">Movies</NavLink>
             <NavLink href="/offers">Offers & Promotions</NavLink>
-            <NavLink href="/about">Contact Us</NavLink>
+            <NavLink href="/">Contact Us</NavLink>
           </div>
 
           <div className="auth-buttons">
-            <button className="login-button">
-              LOGIN
-            </button>
-            <button className="signup-button">
-              SIGN UP
-            </button>
-          </div>
+          <Link to="/RegistrationForm">
+            <button className="login-button">LOGIN</button>
+          </Link>
+          <Link to="/Signup">
+            <button className="signup-button">SIGN UP</button>
+          </Link>
+        </div>
         </div>
       </div>
     </nav>
