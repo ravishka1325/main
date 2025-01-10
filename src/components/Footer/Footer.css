@@ -1,5 +1,5 @@
 .footer {
-    background-color: rgba(255, 255, 255, 0.569);
+    background-color: #707070;
     padding: 4rem 0 0;
     margin-top: 4rem;
   }
@@ -59,6 +59,7 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     text-align: center;
     color: var(--text-secondary);
+    background-color: #F1F1E7;
   }
   @media (max-width: 768px) {
     .footer-content {
