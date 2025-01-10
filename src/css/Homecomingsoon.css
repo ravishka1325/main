@@ -47,14 +47,14 @@ body {
   }
   
   .movie-card-c img {
-    width: auto ;
-    height: 230px;
+    width: 180px ;
+    height: 260px;
     border-radius: 10px;
   }
   
   .movie-card-c h3 {
     margin: 10px 0;
-    font-size: 15px;
+    font-size: 2px;
   }
   
   .movie-card-c p {

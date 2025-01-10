@@ -60,7 +60,7 @@ const Homenowshowing = () => {
       imageUrl: "https://m.media-amazon.com/images/M/MV5BMjEzN2ZjYjUtZTI3NC00MzMyLWJiNDAtMDBiZGEzNTBiY2RkXkEyXkFqcGc@._V1_.jpg",
     },
     {
-      title: "Venom: The Last Dance",
+      title: "Venom 3",
       duration: "2HR 30MIN",
       rating: "PG-13",
       imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMmamDHfLyB1LF8rmqol5WIkAN6NEfd8LoBg&s",

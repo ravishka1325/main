@@ -1,13 +1,13 @@
 
 body {
-    background-color: #353535;  
+    background-color: #1f1f1f;  
     margin: 0;
     margin: 0;
   }
   .movie-slider {
     width: 75%; /* Full width of the container */
     margin: 0 auto;   /* Remove margin */
-    background-color: #353535; /* Ensure the background is black */
+    background-color: #1f1f1f; /* Ensure the background is black */
     animation: fadeIn 1s ease-in;
   }
   
@@ -47,18 +47,18 @@ body {
   }
   
   .movie-card img {
-    width: auto ;
-    height: 230px;
+    width: 180px ;
+    height: 260px;
     border-radius: 10px;
   }
   
   .movie-card h3 {
     margin: 10px 0;
-    font-size: 15px;
+    font-size: 20px;
   }
   
   .movie-card p {
-    font-size: 10px;
+    font-size: 12px;
     color: #ccc;
   }
   
