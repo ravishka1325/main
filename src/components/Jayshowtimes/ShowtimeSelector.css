@@ -1,13 +1,14 @@
 .showtime-selector {
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 3rem;
-    align-items: flex-start;
-    width: 70%; 
-  
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  align-items: flex-start;
+  width: 70%; 
+  text-align: left;
+  color: #ffffff;
 }
 
 

@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import './ShowtimeSelector.css';
 
 const dates = [
-  { id: 1, label: 'TODAY', date: 'Dec 22' },
-  { id: 2, label: 'TOMORROW', date: 'Dec 23' },
-  { id: 3, label: 'MON', date: 'Dec 24' },
-  { id: 4, label: 'TUE', date: 'Dec 25' },
-  { id: 5, label: 'WED', date: 'Dec 26' },
+  { id: 1, label: '', date: 'Dec 22' },
+  { id: 2, label: '', date: 'Dec 23' },
+  { id: 3, label: '', date: 'Dec 24' },
+  { id: 4, label: '', date: 'Dec 25' },
+  { id: 5, label: '', date: 'Dec 26' },
 ];
 
 const theaters = [
