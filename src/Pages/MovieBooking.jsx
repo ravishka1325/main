@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../components/Header';
-import Breadcrumb from '../components/Breadcrumb';
-import MovieDetails from '../components/MovieDetails';
-import ShowtimeSelector from '../components/ShowtimeSelector';
-import './MovieBooking.css';
+import Header from '../../src/components/Yokis/Header';
+import Breadcrumb from '../../src/components/Jayshowtimes/Breadcrumb';
+import MovieDetails from '../../src/components/Jayshowtimes/MovieDetails';
+import ShowtimeSelector from '../../src/components/Jayshowtimes/ShowtimeSelector';
+import '../css/MovieBooking.css';
 
 const MovieBooking = () => {
   return (

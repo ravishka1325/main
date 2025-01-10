@@ -2,19 +2,18 @@ import React from "react";
 import { Play, Ticket } from "lucide-react";
 import 'bootstrap/dist/css/bootstrap.css';
 import '../../css/Home.css';
-import Navbar from "../Navbar/Navbar";
-
+import { Link } from 'react-router-dom'; 
 
 const Homemain = ({ title, description, imageUrl, isActive }) => {
   return (
     <div className={`homemain-container ${isActive ? 'opacity-100' : 'opacity-0'}`}>
-      <div 
+      <div
         className="background-image"
         style={{ backgroundImage: `url(${imageUrl})` }}
       >
         <div className="gradient-overlay"></div>
       </div>
-      
+
       <div className="content-container">
         <div className="text-container">
           <h1 className="title">
@@ -24,10 +23,10 @@ const Homemain = ({ title, description, imageUrl, isActive }) => {
             {description}
           </p>
           <div className="buttons-container">
-            <button className="btn btn-primary">
+            <Link to="/booking" className="btn btn-primary"> {/* Changed to "/booking" */}
               <Ticket className="icon" />
               Buy Tickets
-            </button>
+            </Link>
             <button className="btn btn-primary">
               <Play className="icon" />
               Watch Trailer
