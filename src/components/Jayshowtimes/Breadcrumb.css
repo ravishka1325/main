@@ -1,9 +1,17 @@
 .breadcrumb {
     color: var(--text-secondary);
     font-size: 0.9rem;
-    margin-bottom: 2rem;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
   }
   
   .separator {
     margin: 0 0.5rem;
+  }
+  .breadcrumbmain{
+    display: flex;
+    width: 100%;
+    margin: 2rem 0rem;
+    justify-content: center;
   }

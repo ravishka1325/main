@@ -3,11 +3,14 @@ import './Breadcrumb.css';
 
 const Breadcrumb = () => {
   return (
-    <div className="breadcrumb">
-      <span>Home</span>
-      <span className="separator">&gt;</span>
-      <span>Buy Ticket</span>
+    <div className="breadcrumbmain">
+      <div className="breadcrumb">
+        <span>Home</span>
+        <span className="separator">&gt;</span>
+        <span>Buy Ticket</span>
+      </div>
     </div>
+  
   );
 };
 
