@@ -6,20 +6,17 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-content">
-          {/* Logo */}
           <Link to="/" className="logo">
             <span className="logo-text">CINEX</span>
           </Link>
 
-          {/* Navigation Links - Hidden on mobile */}
           <div className="nav-links">
-            <NavLink href="/" active>Home</NavLink>
+            <NavLink href="/" >Home</NavLink>
             <NavLink href="/movies">Movies</NavLink>
             <NavLink href="/offers">Offers & Promotions</NavLink>
             <NavLink href="/about">About Us</NavLink>
           </div>
 
-          {/* Auth Buttons */}
           <div className="auth-buttons">
             <button className="login-button">
               LOGIN
@@ -34,7 +31,6 @@ const Navbar = () => {
   );
 };
 
-// Helper component for navigation links
 const NavLink = ({ href, children, active = false }) => {
   return (
     <Link
