@@ -1,0 +1,9 @@
+.breadcrumb {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+  
+  .separator {
+    margin: 0 0.5rem;
+  }

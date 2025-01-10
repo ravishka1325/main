@@ -1,0 +1,43 @@
+.movie-details {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .movie-poster {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .movie-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .movie-info h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .movie-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+  }
+  
+  .dot {
+    font-size: 0.5rem;
+    vertical-align: middle;
+  }
+  
+  .movie-genre {
+    color: var(--text-secondary);
+  }
+  
+  .movie-genre span {
+    color: var(--text-primary);
+    font-weight: 500;
+  }

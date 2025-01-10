@@ -1,0 +1,103 @@
+.showtime-selector {
+    margin-bottom: 3rem;
+  }
+  
+  .showtime-selector h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .date-selector {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+  
+  .date-button {
+    background: var(--button-gray);
+    color: var(--text-primary);
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    min-width: 120px;
+    transition: background-color 0.2s;
+  }
+  
+  .date-button.selected {
+    background: var(--accent-red);
+  }
+  
+  .date-label {
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .date-value {
+    font-weight: 500;
+  }
+  
+  .theaters {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .theater h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .format {
+    margin-bottom: 1.5rem;
+  }
+  
+  .format h4 {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .times {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .time-button {
+    background: var(--button-gray);
+    color: var(--text-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+  
+  .time-button:hover {
+    background: var(--accent-red);
+  }
+  
+  .time-button.selected {
+    background: var(--accent-red);
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .movie-details {
+      flex-direction: column;
+    }
+  
+    .movie-poster {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  
+    .date-selector {
+      gap: 0.5rem;
+    }
+  
+    .date-button {
+      min-width: 100px;
+      padding: 0.5rem 1rem;
+    }
+  }
