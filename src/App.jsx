@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home1 from './Pages/home';
 import Navbar from './components/Navbar/Navbar';
 import MovieBooking from './Pages/MovieBooking'; // Import the MovieBooking component
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
             <Route path="/" element={<Home1 />} />
             <Route path="/booking" element={<MovieBooking />} /> {/* Add this route */}
           </Routes>
+          <Footer/>
         </div>
       </Router>
     </StrictMode>
