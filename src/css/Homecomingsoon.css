@@ -1,0 +1,91 @@
+
+body {
+    background-color: #353535;  
+    margin: 0;
+    margin: 0;
+  }
+  .movie-slider {
+    width: 75%; /* Full width of the container */
+    margin: 0 auto;   /* Remove margin */
+    background-color: #353535; /* Ensure the background is black */
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .movie-slider-inner {
+    width: 75%; /* Constrain the inner content to 75% width */
+    margin: 0 auto; /* Center the inner content */
+    padding: 20px 0; /* Optional padding */
+    text-align: center;
+    color: #fff;
+    position: relative;
+  }
+  .movie-slider h3{
+    color: #ffffff;
+  }
+  .movie-slider h2{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 50px 0px;
+  }
+
+  .slick-initialized .slick-slide {
+    width: 240px !important;
+  }
+
+  .movie-card-c {
+    display: flex !important;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px !important;
+    height: 300px;
+    border: none;
+  }
+  
+  .movie-card-c img {
+    width: auto ;
+    height: 230px;
+    border-radius: 10px;
+  }
+  
+  .movie-card-c h3 {
+    margin: 10px 0;
+    font-size: 15px;
+  }
+  
+  .movie-card-c p {
+    font-size: 10px;
+    color: #ccc;
+  }
+  
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  .next {
+    right: -70px;
+  }
+  
+  .prev {
+    left: -70px;
+  }
+  .nextarrow{
+    height: 40px;
+    width: 40px;
+  }
+  .prevarrow{
+    height: 40px;
+    width: 40px;
+  }
