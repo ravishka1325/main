@@ -60,7 +60,7 @@ const Homenowshowing = () => {
       imageUrl: "https://m.media-amazon.com/images/M/MV5BMjEzN2ZjYjUtZTI3NC00MzMyLWJiNDAtMDBiZGEzNTBiY2RkXkEyXkFqcGc@._V1_.jpg",
     },
     {
-      title: "Venom 3",
+      title: "Venom: The Last Dance",
       duration: "2HR 30MIN",
       rating: "PG-13",
       imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMmamDHfLyB1LF8rmqol5WIkAN6NEfd8LoBg&s",
@@ -84,7 +84,7 @@ const Homenowshowing = () => {
       imageUrl: "https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_FMjpg_UX1000_.jpg",
     },
     {
-      title: "Doctor Strange in the Multiverse of Madness",
+      title: "Doctor Strange",
       duration: "2HR 6MIN",
       rating: "PG-13",
       imageUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Doctor_Strange_in_the_Multiverse_of_Madness_poster.jpg/220px-Doctor_Strange_in_the_Multiverse_of_Madness_poster.jpg",
@@ -97,6 +97,9 @@ const Homenowshowing = () => {
     },
   ];
   
+  const handleShowAllClick = () => {
+    history.push('/all-movies'); // Navigate to the new page
+  };
 
 
   return (
@@ -112,6 +115,11 @@ const Homenowshowing = () => {
           </div>
         ))}
       </Slider>
+      <div className="allmoviesbtn">
+        <button className="show-all-btn" onClick={handleShowAllClick}>
+          Show All Movies
+        </button>
+      </div>
     </div>
   );
 };

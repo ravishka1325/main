@@ -84,7 +84,7 @@ const Homecomingsoon = () => {
       imageUrl: "https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_FMjpg_UX1000_.jpg",
     },
     {
-      title: "Doctor Strange in the Multiverse of Madness",
+      title: "Doctor Strange ",
       duration: "2HR 6MIN",
       rating: "PG-13",
       imageUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/1/17/Doctor_Strange_in_the_Multiverse_of_Madness_poster.jpg/220px-Doctor_Strange_in_the_Multiverse_of_Madness_poster.jpg",
@@ -97,11 +97,13 @@ const Homecomingsoon = () => {
     },
   ];
   
-
+  const handleShowAllClick = () => {
+    history.push('/all-movies'); // Navigate to the new page
+  };
 
   return (
     <div className="movie-slider">
-      <h2>Coming Soon..</h2>
+      <h2>Coming Soon</h2>
       <Slider {...settings}>
         {movies.map((movie, index) => (
           <div key={index} className="movie-card-c">
@@ -111,6 +113,11 @@ const Homecomingsoon = () => {
           </div>
         ))}
       </Slider>
+      <div className="allmoviesbtn">
+        <button className="show-all-btn" onClick={handleShowAllClick}>
+          Show All Movies
+        </button>
+      </div>
     </div>
   );
 };
