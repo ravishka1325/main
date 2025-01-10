@@ -103,7 +103,7 @@ const Homenowshowing = () => {
 
 
   return (
-    <div className="movie-slider">
+    <><div className="movie-slider">
       <h2>Now Showing</h2>
       <Slider {...settings}>
         {movies.map((movie, index) => (
@@ -120,7 +120,7 @@ const Homenowshowing = () => {
           Show All Movies
         </button>
       </div>
-    </div>
+    </div><hr /></>
   );
 };
 

@@ -113,3 +113,8 @@ margin: 35px 0px;
 background-color: #707070;
 border: none;
 }
+
+hr {
+  border: 2px solid #ffffff;
+  margin: 20px 0;
+}
