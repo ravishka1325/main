@@ -1,6 +1,7 @@
 .footer {
     background-color: #707070;
     padding: 4rem 0 0;
+    color: #ffffff;
     margin-top: 4rem;
   }
   .footer-content {
@@ -29,11 +30,12 @@
     transition: color 0.2s;
   }
   .footer-section a:hover {
-    color: var(--text-primary);
+    color: #c0c0c0;
   }
   .footer-social p {
     margin-bottom: 1rem;
-    color: var(--text-secondary);
+    color: #ffffff;
+    font-weight: 700;
   }
   .social-icons {
     display: flex;
@@ -83,3 +85,5 @@
       align-items: center;
     }
   }
+
+  
