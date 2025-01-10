@@ -4,10 +4,19 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../../css/Homenowshowing.css';
 
+import { useNavigate } from 'react-router-dom';
+
 import nextArrow from '../../assets/arrownext.png';
 import prevArrow from '../../assets/arrowprevios.png';
 
+
 const Homenowshowing = () => {
+
+  const navigate = useNavigate();
+
+  const handleBuyTickets = () => {
+    navigate('/booking');
+  };
   const settings = {
     infinite: false, // Set to false to prevent infinite scrolling
     speed: 500,
@@ -107,12 +116,12 @@ const Homenowshowing = () => {
       <h2>Now Showing</h2>
       <Slider {...settings}>
         {movies.map((movie, index) => (
-          <div key={index} className="movie-card">
-            <img src={movie.imageUrl} alt={movie.title} />
-            <h3>{movie.title}</h3>
-            <p>{movie.duration} | {movie.rating}</p>
-            <button>Buy Tickets</button>
-          </div>
+    <div className="movie-card">
+      <img src={movie.imageUrl} alt={movie.title} />
+      <h3>{movie.title}</h3>
+      <p>{movie.duration} | {movie.rating}</p>
+      <button onClick={handleBuyTickets}>Buy Tickets</button>
+    </div>
         ))}
       </Slider>
       <div className="allmoviesbtn">

@@ -9,11 +9,9 @@ const MovieBooking = () => {
   return (
     <div>
       <Header />
-      <div className="container">
-        <Breadcrumb />
-        <MovieDetails />
-        <ShowtimeSelector />
-      </div>
+      <Breadcrumb />
+      <MovieDetails />
+      <ShowtimeSelector />
     </div>
   );
 };
