@@ -1,0 +1,101 @@
+.navbar {
+    background-color: rgb(24, 24, 27);
+    border-bottom: 1px solid rgb(39, 39, 45);
+    width: 100%;
+  }
+  
+  .navbar-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    position: relative;
+    width: 100%;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 24px;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: none;
+    margin: 0 auto;
+    padding-left: 200px; /* Add space for logo */
+  }
+  
+  @media (min-width: 768px) {
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+  }
+  
+  .nav-link {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgb(209, 213, 219);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .nav-link:hover {
+    color: white;
+  }
+  
+  .nav-link.active {
+    color: white;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    right: 24px;
+  }
+  
+  .login-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgb(209, 213, 219);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .login-button:hover {
+    color: white;
+    background-color: rgb(39, 39, 45);
+  }
+  
+  .signup-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(220, 38, 38);
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .signup-button:hover {
+    background-color: rgb(185, 28, 28);
+  }

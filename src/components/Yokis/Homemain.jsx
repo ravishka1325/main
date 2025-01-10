@@ -1,6 +1,8 @@
+import React from "react";
 import { Play, Ticket } from "lucide-react";
 import 'bootstrap/dist/css/bootstrap.css';
 import '../../css/Home.css';
+import Navbar from "../Navbar/Navbar";
 
 
 const Homemain = ({ title, description, imageUrl, isActive }) => {
