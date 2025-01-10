@@ -5,6 +5,8 @@ import Navbar from './components/Navbar/Navbar';
 import MovieBooking from './Pages/MovieBooking'; // Import the MovieBooking component
 import Footer from './components/Footer/Footer';
 import RegistrationForm from './components/RegistrationForm/RegistrationForm';
+import Moviepage from './Pages/MoviePage';
+
 
 const App = () => {
   return (
@@ -16,6 +18,7 @@ const App = () => {
             <Route path="/" element={<Home1 />} />
             <Route path="/booking" element={<MovieBooking />} /> {/* Add this route */}
             <Route path="/RegistrationForm" element={<RegistrationForm />} />
+            <Route path="/Moviepage" element={<Moviepage />} />
           </Routes>
           <Footer/>
         </div>
