@@ -1,6 +1,6 @@
 import { Play, Ticket } from "lucide-react";
 import 'bootstrap/dist/css/bootstrap.css';
-import '../css/Home.css';
+import '../../css/Home.css';
 
 
 const Homemain = ({ title, description, imageUrl, isActive }) => {

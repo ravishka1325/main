@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Homemain from "./Homemain";
+import Homemain from "../Yokis/Homemain";
 
 const slides = [
   {

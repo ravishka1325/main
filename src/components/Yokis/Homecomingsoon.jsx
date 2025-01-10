@@ -2,12 +2,12 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import '../css/Homenowshowing.css';
+import '../../css/Homecomingsoon.css';
 
-import nextArrow from '../assets/arrownext.png';
-import prevArrow from '../assets/arrowprevios.png';
+import nextArrow from '../../assets/arrownext.png';
+import prevArrow from '../../assets/arrowprevios.png';
 
-const Homenowshowing = () => {
+const Homecomingsoon = () => {
   const settings = {
     infinite: false, // Set to false to prevent infinite scrolling
     speed: 500,
@@ -101,14 +101,13 @@ const Homenowshowing = () => {
 
   return (
     <div className="movie-slider">
-      <h2>Now Showing</h2>
+      <h2>Coming Soon..</h2>
       <Slider {...settings}>
         {movies.map((movie, index) => (
-          <div key={index} className="movie-card">
+          <div key={index} className="movie-card-c">
             <img src={movie.imageUrl} alt={movie.title} />
             <h3>{movie.title}</h3>
-            <p>{movie.duration} | {movie.rating}</p>
-            <button>Buy Tickets</button>
+            <p>{movie.duration}</p>
           </div>
         ))}
       </Slider>
@@ -134,4 +133,4 @@ function SamplePrevArrow(props) {
   );
 }
 
-export default Homenowshowing;
+export default Homecomingsoon;

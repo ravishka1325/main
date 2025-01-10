@@ -1,7 +1,7 @@
 import React from 'react'
-import Home from '../components/Home';
-import Homecomingsoon from '../components/Homecomingsoon';
-import Homenowshowing from '../components/Homenewshowing';
+import Home from '../components/Jayshowtimes/Home';
+import Homecomingsoon from '../components/Yokis/Homecomingsoon';
+import Homenowshowing from '../components/Yokis/Homenewshowing';
 
 
 const Home1 = () => {
