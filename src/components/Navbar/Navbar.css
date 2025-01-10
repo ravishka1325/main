@@ -36,7 +36,9 @@
     margin: 0 auto;
     padding-left: c; 
   }
-  
+  .nav-links a.active {
+    color: rgb(255, 0, 0); /* Color for the active link */
+  }
   @media (min-width: 768px) {
     .nav-links {
       display: flex;
