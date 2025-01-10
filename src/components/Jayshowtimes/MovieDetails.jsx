@@ -11,9 +11,9 @@ const MovieDetails = () => {
       />
 
       <div className="movie-info">
-        <h1>Spider-Man: Far from Home</h1>
+        <h1>Hi Nanna</h1>
         <div className="movie-meta">
-          <span>2019</span>
+          <span>2023</span>
           <span className="dot">•</span>
           <span>PG-13</span>
           <span className="dot">•</span>
