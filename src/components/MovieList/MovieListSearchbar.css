@@ -1,13 +1,17 @@
 .search-bar {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    padding: 10px;
-    border-radius: 8px;
-    justify-content: center;
-    margin: 5px 0px 50px 0px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 5px 0px 50px 0px;
+  width: fit-content;
+  justify-content: space-between;
   }
-  
+  .Searchbar-container{
+    display: flex;
+    justify-content: center;
+  }
   .search-input,
   .genre-select,
   .second-search-select {
