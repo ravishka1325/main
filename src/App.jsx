@@ -9,6 +9,7 @@ import Moviepage from './Pages/MoviePage';
 import SeatSelection from './components/MovieSelectionPage/SeatSelection';
 import AdminDash from './Pages/AdminDash';
 import SignIn from './components/Signinform/Signin';
+import ShowtimeManagement from './Pages/showtimeMG';
 
 
 const App = () => {
@@ -25,6 +26,8 @@ const App = () => {
             <Route path="/Moviepage" element={<Moviepage />} />
             <Route path="/SeatSelection" element={<SeatSelection/>}/>
             <Route path="/AdminDashBoard" element={<AdminDash/>}/>
+
+            <Route path="/showtimemgr" element={<ShowtimeManagement/>}/>
           </Routes>
           <Footer/>
         </div>

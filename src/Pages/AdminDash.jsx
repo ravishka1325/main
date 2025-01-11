@@ -1,12 +1,36 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Header from '../components/AdminDashboard/Header';
 import StatCard from '../components/AdminDashboard/StatCard';
 import ActionButton from '../components/AdminDashboard/ActionButton';
 import '../css/AdminDash.css';
 
 const AdminDash = () => {
+  const navigate = useNavigate();
+
   const handleAction = (action) => {
-    console.log(`Action clicked: ${action}`);
+    switch (action) {
+      case 'add-showtime':
+        navigate('/showtimemgr');
+        break;
+      case 'add-movie':
+        console.log('Add Movie clicked');
+        break;
+      case 'add-theatre':
+        console.log('Add Theatre clicked');
+        break;
+      case 'list-showtimes':
+        console.log('List Showtimes clicked');
+        break;
+      case 'list-movies':
+        console.log('List Movies clicked');
+        break;
+      case 'list-theatres':
+        console.log('List Theatres clicked');
+        break;
+      default:
+        console.log(`Unknown action: ${action}`);
+    }
   };
 
   return (
