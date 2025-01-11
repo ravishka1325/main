@@ -10,7 +10,7 @@ const movies = [
     releaseDate: "14 Nov 2024",
     status: "Now Showing",
     description: "After his home is conquered by the tyrannical emperors who now lead Rome, Lucius is forced to enter the Colosseum and must look to his past to find strength to return the glory of Rome to its people.",
-    posterUrl: "https://mediafiles.cinema.com.hk/broadway/cmsimg/cinweb/movie/movie_1731300469.jpg" // Replace with your actual poster image URL
+    posterUrl: "https://mediafiles.cinema.com.hk/broadway/cmsimg/cinweb/movie/movie_1731300469.jpg" 
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ const movies = [
     releaseDate: "14 Nov 2024",
     status: "Coming Soon",
     description: "After his home is conquered by the tyrannical emperors who now lead Rome, Lucius is forced to enter the Colosseum and must look to his past to find strength to return the glory of Rome to its people.",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/id/f/f7/Poster_Thaghut.jpg" // Replace with your actual poster image URL
+    posterUrl: "https://upload.wikimedia.org/wikipedia/id/f/f7/Poster_Thaghut.jpg" 
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ const movies = [
     releaseDate: "14 Nov 2024",
     status: "Now Showing",
     description: "After his home is conquered by the tyrannical emperors who now lead Rome, Lucius is forced to enter the Colosseum and must look to his past to find strength to return the glory of Rome to its people.",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/id/f/f7/Poster_Thaghut.jpg" // Replace with your actual poster image URL
+    posterUrl: "https://upload.wikimedia.org/wikipedia/id/f/f7/Poster_Thaghut.jpg" 
   },
   {
     id: 6,
@@ -55,7 +55,7 @@ const movies = [
     releaseDate: "14 Nov 2024",
     status: "Coming Soon",
     description: "After his home is conquered by the tyrannical emperors who now lead Rome, Lucius is forced to enter the Colosseum and must look to his past to find strength to return the glory of Rome to its people.",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/id/f/f7/Poster_Thaghut.jpg" // Replace with your actual poster image URL
+    posterUrl: "https://upload.wikimedia.org/wikipedia/id/f/f7/Poster_Thaghut.jpg" 
   },
   {
     id: 7,
@@ -64,7 +64,7 @@ const movies = [
     releaseDate: "14 Nov 2024",
     status: "Now Showing",
     description: "After his home is conquered by the tyrannical emperors who now lead Rome, Lucius is forced to enter the Colosseum and must look to his past to find strength to return the glory of Rome to its people.",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/id/f/f7/Poster_Thaghut.jpg" // Replace with your actual poster image URL
+    posterUrl: "https://upload.wikimedia.org/wikipedia/id/f/f7/Poster_Thaghut.jpg" 
   },
   {
     id: 8,
@@ -73,9 +73,8 @@ const movies = [
     releaseDate: "14 Nov 2024",
     status: "Coming Soon",
     description: "After his home is conquered by the tyrannical emperors who now lead Rome, Lucius is forced to enter the Colosseum and must look to his past to find strength to return the glory of Rome to its people.",
-    posterUrl: "https://upload.wikimedia.org/wikipedia/id/f/f7/Poster_Thaghut.jpg" // Replace with your actual poster image URL
+    posterUrl: "https://upload.wikimedia.org/wikipedia/id/f/f7/Poster_Thaghut.jpg" 
   },
-  // Add more movie objects here
 ];
 
 const Movies = () => {
