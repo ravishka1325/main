@@ -31,17 +31,6 @@ const MovieListSearchBar = () => {
           <option value="drama">Drama</option>
           {/* Add more genres as needed */}
         </select>
-        <select
-          value={secondSearch}
-          onChange={(e) => setSecondSearch(e.target.value)}
-          className="second-search-select"
-        >
-          <option value="">Search Movies</option>
-          <option value="movie1">Movie 1</option>
-          <option value="movie2">Movie 2</option>
-          <option value="movie3">Movie 3</option>
-          {/* Add more options as needed */}
-        </select>
         <button onClick={handleApply} className="apply-button">
           APPLY
         </button>

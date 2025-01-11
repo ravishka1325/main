@@ -10,6 +10,7 @@ import SeatSelection from './components/MovieSelectionPage/SeatSelection';
 import AdminDash from './Pages/AdminDash';
 import SignIn from './components/Signinform/Signin';
 import ShowtimeManagement from './Pages/showtimeMG';
+import ContactUS from './components/ContactUS/Contactus';
 
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
             <Route path="/AdminDashBoard" element={<AdminDash/>}/>
 
             <Route path="/showtimemgr" element={<ShowtimeManagement/>}/>
+            <Route path="/Contactus" element={<ContactUS/>}/>
           </Routes>
           <Footer/>
         </div>

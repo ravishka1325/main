@@ -5,8 +5,6 @@
   padding: 10px;
   border-radius: 8px;
   margin: 5px 0px 50px 0px;
-  width: fit-content;
-  justify-content: space-between;
   }
   .Searchbar-container{
     display: flex;
@@ -22,6 +20,7 @@
     background-color: #ccc;
     color: black;
     text-align: center;
+    margin: 0;
   }
   
   .apply-button {

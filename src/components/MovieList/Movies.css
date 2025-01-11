@@ -51,9 +51,10 @@
   }
   
   .movie-poster-m {
-    width: 35%; 
+    width: 320px;
     height: auto;
-    object-fit: cover; 
+    object-fit: cover;
+    border-radius: 12px;
   }
   
   .movie-info-m {
