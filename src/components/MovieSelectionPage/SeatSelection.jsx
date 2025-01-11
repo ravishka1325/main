@@ -1,8 +1,15 @@
 import React, { useState, useMemo } from "react";
+import { useLocation } from "react-router-dom";
 import "../../css/SeatSelection.css"; 
 
 const SeatSelection = () => {
   const [selectedSeats, setSelectedSeats] = useState([]);
+
+  // Extract query parameters from the URL
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const selectedDate = queryParams.get("date");
+  const selectedTime = queryParams.get("time");
 
   const rows = useMemo(() => ["H", "G", "F", "E", "D", "C", "B", "A"], []);
   const columns = useMemo(() => Array.from({ length: 14 }, (_, i) => i + 1), []);
@@ -32,16 +39,9 @@ const SeatSelection = () => {
     <div className="seat-selection">
       <div className="header">
         <h1>Spider-Man: Far from Home</h1>
-        <p>CINEX - Bambalapitiya | Fri, 27 Jan | DOLBY ATMOS 3D</p>
-      </div>
-
-      <div className="showtimes">
-        <button>9.00 AM</button>
-        <button>9.00 AM</button>
-        <button>9.00 AM</button>
-        <button>9.00 AM</button>
-        <button>9.00 AM</button>
-        <button>9.00 AM</button>
+        <p>
+          CINEX - Bambalapitiya | Date: {selectedDate || "Not Selected"} | Time: {selectedTime || "Not Selected"}
+        </p>
       </div>
 
       <div className="screen">SCREEN</div>

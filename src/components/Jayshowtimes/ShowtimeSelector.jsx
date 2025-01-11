@@ -38,10 +38,11 @@ const ShowtimeSelector = () => {
 
   useEffect(() => {
     if (selectedDate && selectedTime) {
-      // Navigate to the movie selection page with query parameters
-      navigate(`/SeatSelection`);
+      // Navigate to the SeatSelection page with query parameters
+      navigate(`/SeatSelection?date=${selectedDate}&time=${selectedTime}`);
     }
   }, [selectedDate, selectedTime, navigate]);
+  
 
   return (
     <div className="showtime-selector">
