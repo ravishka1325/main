@@ -22,7 +22,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 5000); // Change slide every 5 seconds
+    }, 5000); 
     return () => clearInterval(interval);
   }, []);
 
@@ -33,8 +33,8 @@ const Home = () => {
           key={slide.id}
           title={slide.title}
           description={slide.description}
-          imageUrl={slide.imageUrl} // Pass the image URL
-          isActive={index === activeSlide} // Show active slide
+          imageUrl={slide.imageUrl} 
+          isActive={index === activeSlide} 
         />
       ))}
     </div>

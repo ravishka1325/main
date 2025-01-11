@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
-import { useLocation } from "react-router-dom";
-import "./SeatSelection.css"; 
+import { useLocation, useNavigate } from "react-router-dom";
+import "./SeatSelection.css";
 
 const SeatSelection = () => {
   const [selectedSeats, setSelectedSeats] = useState([]);
@@ -10,6 +10,8 @@ const SeatSelection = () => {
   const queryParams = new URLSearchParams(location.search);
   const selectedDate = queryParams.get("date");
   const selectedTime = queryParams.get("time");
+
+  const navigate = useNavigate(); // Hook to navigate between pages
 
   const rows = useMemo(() => ["H", "G", "F", "E", "D", "C", "B", "A"], []);
   const columns = useMemo(() => Array.from({ length: 14 }, (_, i) => i + 1), []);
@@ -27,12 +29,31 @@ const SeatSelection = () => {
 
   const isSeatBooked = (seat) => bookedSeats.includes(seat);
 
-  const calculatePrice = useMemo(() => selectedSeats.length * ticketPrice, [selectedSeats, ticketPrice]);
+  const calculatePrice = useMemo(
+    () => selectedSeats.length * ticketPrice,
+    [selectedSeats, ticketPrice]
+  );
 
   const handleSeatClick = (seat) => {
     if (!isSeatBooked(seat)) {
       toggleSeatSelection(seat);
     }
+  };
+
+  // Handlers for buttons
+  const handleContinue = () => {
+    navigate("/payment", {
+      state: {
+        selectedSeats,
+        totalPrice: calculatePrice,
+        selectedDate,
+        selectedTime,
+      },
+    });
+  };
+
+  const handleBack = () => {
+    navigate("/booking");
   };
 
   return (
@@ -78,8 +99,12 @@ const SeatSelection = () => {
       </div>
 
       <div className="actions">
-        <button className="continue">Continue</button>
-        <button className="back">Back</button>
+        <button className="continue" onClick={handleContinue}>
+          Continue
+        </button>
+        <button className="back" onClick={handleBack}>
+          Back
+        </button>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../../css/Homenowshowing.css';
 
@@ -9,16 +9,19 @@ import { useNavigate } from 'react-router-dom';
 import nextArrow from '../../assets/arrownext.png';
 import prevArrow from '../../assets/arrowprevios.png';
 
-
 const Homenowshowing = () => {
-
   const navigate = useNavigate();
 
   const handleBuyTickets = () => {
-    navigate('/booking');
+    navigate('/booking'); // Navigate to booking page
   };
+
+  const handleShowAllClick = () => {
+    navigate('/Moviepage'); // Navigate to the "all movies" page
+  };
+
   const settings = {
-    infinite: false, // Set to false to prevent infinite scrolling
+    infinite: false, // Prevent infinite scrolling
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -30,23 +33,23 @@ const Homenowshowing = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-        }
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-        }
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-        }
-      }
-    ]
+        },
+      },
+    ],
   };
 
   const movies = [
@@ -105,23 +108,18 @@ const Homenowshowing = () => {
       imageUrl: "https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_.jpg",
     },
   ];
-  
-  const handleShowAllClick = () => {
-    history.push('/all-movies'); // Navigate to the new page
-  };
-
 
   return (
     <><div className="movie-slider">
       <h2>Now Showing</h2>
       <Slider {...settings}>
         {movies.map((movie, index) => (
-    <div className="movie-card">
-      <img src={movie.imageUrl} alt={movie.title} />
-      <h3>{movie.title}</h3>
-      <p>{movie.duration} | {movie.rating}</p>
-      <button onClick={handleBuyTickets}>Buy Tickets</button>
-    </div>
+          <div key={index} className="movie-card">
+            <img src={movie.imageUrl} alt={movie.title} />
+            <h3>{movie.title}</h3>
+            <p>{movie.duration} | {movie.rating}</p>
+            <button onClick={handleBuyTickets}>Buy Tickets</button>
+          </div>
         ))}
       </Slider>
       <div className="allmoviesbtn">
@@ -130,6 +128,7 @@ const Homenowshowing = () => {
         </button>
       </div>
     </div><hr /></>
+
   );
 };
 
@@ -137,7 +136,7 @@ function SampleNextArrow(props) {
   const { onClick } = props;
   return (
     <div className="arrow next" onClick={onClick}>
-      <img className='nextarrow' src={nextArrow} alt="Next" />
+      <img className="nextarrow" src={nextArrow} alt="Next" />
     </div>
   );
 }
@@ -146,7 +145,7 @@ function SamplePrevArrow(props) {
   const { onClick } = props;
   return (
     <div className="arrow prev" onClick={onClick}>
-      <img className='prevarrow' src={prevArrow} alt="Previous" />
+      <img className="prevarrow" src={prevArrow} alt="Previous" />
     </div>
   );
 }

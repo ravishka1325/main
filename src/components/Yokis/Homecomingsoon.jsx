@@ -1,13 +1,16 @@
 import React from 'react';
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../../css/Homecomingsoon.css';
+import { useNavigate } from 'react-router-dom';
 
 import nextArrow from '../../assets/arrownext.png';
 import prevArrow from '../../assets/arrowprevios.png';
 
 const Homecomingsoon = () => {
+  const navigate = useNavigate(); // Use navigate for routing
+
   const settings = {
     infinite: false, // Set to false to prevent infinite scrolling
     speed: 500,
@@ -21,23 +24,23 @@ const Homecomingsoon = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-        }
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-        }
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-        }
-      }
-    ]
+        },
+      },
+    ],
   };
 
   const movies = [
@@ -96,9 +99,9 @@ const Homecomingsoon = () => {
       imageUrl: "https://m.media-amazon.com/images/M/MV5BMmFiZGZjMmEtMTA0Ni00MzA2LTljMTYtZGI2MGJmZWYzZTQ2XkEyXkFqcGc@._V1_.jpg",
     },
   ];
-  
+
   const handleShowAllClick = () => {
-    history.push('/all-movies'); // Navigate to the new page
+    navigate('/Moviepage'); // Navigate to /all-movies
   };
 
   return (
@@ -126,7 +129,7 @@ function SampleNextArrow(props) {
   const { onClick } = props;
   return (
     <div className="arrow next" onClick={onClick}>
-      <img className='nextarrow' src={nextArrow} alt="Next" />
+      <img className="nextarrow" src={nextArrow} alt="Next" />
     </div>
   );
 }
@@ -135,7 +138,7 @@ function SamplePrevArrow(props) {
   const { onClick } = props;
   return (
     <div className="arrow prev" onClick={onClick}>
-      <img className='prevarrow' src={prevArrow} alt="Previous" />
+      <img className="prevarrow" src={prevArrow} alt="Previous" />
     </div>
   );
 }
