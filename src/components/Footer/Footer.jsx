@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-links">
           <div className="footer-section">
             <a href="/">Home</a>
-            <a href="/movies">Movies</a>
+            <a href="/Moviepage">Movies</a>
             <a href="/about">About CINEX</a>
             <a href="/contact">Contact Us</a>
           </div>
