@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { useLocation } from "react-router-dom";
-import "../../css/SeatSelection.css"; 
+import "./SeatSelection.css"; 
 
 const SeatSelection = () => {
   const [selectedSeats, setSelectedSeats] = useState([]);
@@ -37,7 +37,7 @@ const SeatSelection = () => {
 
   return (
     <div className="seat-selection">
-      <div className="header">
+      <div className="header-ss">
         <h1>Spider-Man: Far from Home</h1>
         <p>
           CINEX - Bambalapitiya | Date: {selectedDate || "Not Selected"} | Time: {selectedTime || "Not Selected"}
