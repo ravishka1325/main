@@ -1,10 +1,10 @@
 import React from 'react';
-import './Breadcrumb.css';
+import './Showtimes.css';
 
-const Breadcrumb = () => {
+const Showtimess = () => {
   return (
-    <div className="breadcrumbmain">
-      <div className="breadcrumb">
+    <div className="showtimesmain">
+      <div className="showtimes">
         <span>Home</span>
         <span className="separator">&gt;</span>
         <span>Buy Ticket</span>
@@ -14,4 +14,4 @@ const Breadcrumb = () => {
   );
 };
 
-export default Breadcrumb;
+export default Showtimess;

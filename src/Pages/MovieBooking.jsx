@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../src/components/Yokis/Header';
-import Breadcrumb from '../../src/components/Jayshowtimes/Breadcrumb';
+import Breadcrumb from '../../src/components/Jayshowtimes/Showtimes';
 import MovieDetails from '../../src/components/Jayshowtimes/MovieDetails';
 import ShowtimeSelector from '../../src/components/Jayshowtimes/ShowtimeSelector';
 import '../css/MovieBooking.css';
