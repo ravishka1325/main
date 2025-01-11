@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import RegistrationForm from './components/RegistrationForm/RegistrationForm';
 import Moviepage from './Pages/MoviePage';
 import SeatSelection from './components/MovieSelectionPage/SeatSelection';
+import AdminDash from './Pages/AdminDash';
 import SignIn from './components/Signinform/Signin';
 
 
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/SignIn" element={<SignIn/>} />
             <Route path="/Moviepage" element={<Moviepage />} />
             <Route path="/SeatSelection" element={<SeatSelection/>}/>
+            <Route path="/AdminDashBoard" element={<AdminDash/>}/>
           </Routes>
           <Footer/>
         </div>

@@ -20,7 +20,7 @@ const Navbar = ({ isLoggedIn }) => {
           <div className="nav-links">
             <NavLink href="/">Home</NavLink>
             <NavLink href="/Moviepage">Movies</NavLink>
-            <NavLink href="/offers">Offers & Promotions</NavLink>
+            <NavLink href="/AdminDashBoard">Offers & Promotions</NavLink>
             <NavLink href="/contact">Contact Us</NavLink>
           </div>
 
