@@ -17,7 +17,6 @@
   font-weight: bold;
 }
 body {
-  background-color: #1A1F2C;
   color: var(--text-light);
   --card: #F1F1F1;
   --text-dark: #222222;
