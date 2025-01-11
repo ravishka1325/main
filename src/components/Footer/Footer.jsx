@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-section">
-            <a href="/faq">FAQ</a>
+            <a href="/TheatreManage">FAQ</a>
             <a href="/terms">Terms of Use</a>
             <a href="/privacy">Privacy Policy</a>
           </div>
