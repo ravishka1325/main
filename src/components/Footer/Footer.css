@@ -63,7 +63,7 @@
     padding: 0.1rem 0;
     border-top: 1px solid rgba(255, 0, 0, 0.1);
     text-align: center;
-    color: #000000 var(--text-secondary);
+    color: #000000;
     font-weight: 600;
     background-color: #F1F1E7;
   }
