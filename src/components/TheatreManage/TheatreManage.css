@@ -1,0 +1,206 @@
+.theater-page{
+    height: auto;
+    min-height: 50vh;
+}
+.theatre-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .theatre-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .theatre-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #8B0000;
+  }
+  
+  .button:hover {
+    background-color: #4B0000;
+  }
+  
+  .tm-table-wrapper {
+    width: 100%;
+  }
+  
+  .theatre-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .theatre-table th,
+  .theatre-table td {
+    padding: 10px 15px;
+    text-align: left;
+    border: 1px solid #444;
+  }
+  
+  .theatre-table th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .theatre-table tbody tr:nth-child(even) {
+    background-color: #444;
+  }
+  
+  .action-icons button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .page-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #555;
+    color: #fff;
+  }
+  
+  .page-button:hover {
+    background-color: #777;
+  }
+  
+  .page-button:disabled {
+    background-color: #333;
+    cursor: not-allowed;
+  }
+  
+  /***** Popup CSS *****/
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background: #000;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
+  
+  .popup-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: #888;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .form-row label {
+    flex: 1;
+  }
+  
+  .popup-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .popup-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .popup-buttons button[type="button"] {
+    background: #4B0000;
+    color: #fff;
+  }
+  
+  .popup-buttons button[type="button"]:hover {
+    background: #2A0000;
+  }
+  
+  .popup-buttons button[type="submit"] {
+    background: #C80000;
+    color: #fff;
+  }
+  
+  .popup-buttons button[type="submit"]:hover {
+    background: #A00000;
+  }
+  

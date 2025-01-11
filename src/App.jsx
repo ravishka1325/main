@@ -11,6 +11,7 @@ import AdminDash from './Pages/AdminDash';
 import SignIn from './components/Signinform/Signin';
 import ShowtimeManagement from './Pages/showtimeMG';
 import ContactUS from './components/ContactUS/Contactus';
+import TheatreManage from './components/TheatreManage/TheatreManage';
 
 
 const App = () => {
@@ -27,9 +28,9 @@ const App = () => {
             <Route path="/Moviepage" element={<Moviepage />} />
             <Route path="/SeatSelection" element={<SeatSelection/>}/>
             <Route path="/AdminDashBoard" element={<AdminDash/>}/>
-
             <Route path="/showtimemgr" element={<ShowtimeManagement/>}/>
             <Route path="/Contactus" element={<ContactUS/>}/>
+            <Route path="/TheatreManage" element={<TheatreManage/>}/>
           </Routes>
           <Footer/>
         </div>
