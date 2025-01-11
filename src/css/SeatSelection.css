@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .seat-selection {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .header p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #bbbbbb;
+  }
+  
+  .showtimes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .showtimes button {
+    padding: 10px 20px;
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .showtimes button:hover {
+    background-color: #444;
+  }
+  
+  .screen {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border-radius: 5px;
+  }
+  
+  .seating {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .row {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .seat {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .available {
+    background-color: #444;
+  }
+  
+  .available:hover {
+    background-color: #666;
+  }
+  
+  .selected {
+    background-color: #e63946;
+    color: #fff;
+  }
+  
+  .booked {
+    background-color: #333;
+    color: #999;
+    cursor: not-allowed;
+  }
+  
+  .summary {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .actions .continue {
+    background-color: #e63946;
+    color: #fff;
+  }
+  
+  .actions .continue:hover {
+    background-color: #d32f2f;
+  }
+  
+  .actions .back {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  .actions .back:hover {
+    background-color: #666;
+  }
+  

@@ -6,6 +6,7 @@ import MovieBooking from './Pages/MovieBooking'; // Import the MovieBooking comp
 import Footer from './components/Footer/Footer';
 import RegistrationForm from './components/RegistrationForm/RegistrationForm';
 import Moviepage from './Pages/MoviePage';
+import SeatSelection from './components/MovieSelectionPage/SeatSelection';
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/booking" element={<MovieBooking />} /> {/* Add this route */}
             <Route path="/RegistrationForm" element={<RegistrationForm />} />
             <Route path="/Moviepage" element={<Moviepage />} />
+            <Route path="/SeatSelection" element={<SeatSelection/>}/>
           </Routes>
           <Footer/>
         </div>

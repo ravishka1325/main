@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './ShowtimeSelector.css';
 
 const dates = [
@@ -33,6 +34,14 @@ const theaters = [
 const ShowtimeSelector = () => {
   const [selectedDate, setSelectedDate] = useState(1);
   const [selectedTime, setSelectedTime] = useState(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (selectedDate && selectedTime) {
+      // Navigate to the movie selection page with query parameters
+      navigate(`/SeatSelection`);
+    }
+  }, [selectedDate, selectedTime, navigate]);
 
   return (
     <div className="showtime-selector">
