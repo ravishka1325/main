@@ -11,18 +11,18 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 100px;
-    gap: 50px;
+    gap: 40px;
   }
   
   button {
-    padding: 8px 16px;
+    padding: 12px 25px;
     font-size: 14px;
     cursor: pointer;
     background-color: #c30d24;
     border: none;
     color: white;
     border-radius: 10px;
-    margin-top: 10px; 
+    margin-top: 10px;
     justify-content: center;
   }
   
@@ -32,43 +32,49 @@
   
   .movies-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Create two columns */
+    /*grid-template-columns: repeat(2, 1fr); /* Create two columns */
     gap: 50px;
-    justify-items: center; /* Center the items */
+    justify-items: center; 
+    width: 85%;
   }
   
   .movie-card-m {
     width: 100%;
-    max-width: 500px;
+    max-width: 900px;
     color: rgb(255, 255, 255);
     border-radius: 8px;
     overflow: hidden;
-    display: flex; 
-    flex-direction: row; 
-    gap: 15px; 
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    max-height: 400px;
   }
   
   .movie-poster-m {
-    width: 40%; 
+    width: 35%; 
     height: auto;
     object-fit: cover; 
   }
   
-  .movie-info {
+  .movie-info-m {
     padding: 15px;
-    width: 530px; 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
   }
   
-  .movie-info h3 {
+  .movie-info-m h3 {
     font-size: 18px;
     margin-bottom: 10px;
     font-weight: bold; 
   } 
   
-  .movie-info p {
+  .movie-info-m p {
     font-size: 14px;
     margin-bottom: 10px;
   }
+
+  .moviel-btns {
+    display: flex;
+    gap: 70px;
+}

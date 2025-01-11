@@ -97,12 +97,13 @@ const Movies = () => {
         {filteredMovies.map(movie => (
           <div key={movie.id} className="movie-card-m">
             <img src={movie.posterUrl} alt={movie.title} className="movie-poster-m" />
-            <div className="movie-info">
+            <div className="movie-info-m">
               <h2>{movie.title}</h2>
               <p>{movie.duration} | {movie.releaseDate}</p>
               <p>{movie.description}</p>
-              <button>Buy Tickets</button>
-              <button>Watch Trailer</button>
+              <div className="moviel-btns">
+                <button>View Details</button>
+              </div>
             </div>
           </div>
         ))}
