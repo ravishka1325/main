@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import RegistrationForm from './components/RegistrationForm/RegistrationForm';
 import Moviepage from './Pages/MoviePage';
 import SeatSelection from './components/MovieSelectionPage/SeatSelection';
+import SignIn from './components/Signinform/Signin';
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/" element={<Home1 />} />
             <Route path="/booking" element={<MovieBooking />} /> {/* Add this route */}
             <Route path="/RegistrationForm" element={<RegistrationForm />} />
+            <Route path="/SignIn" element={<SignIn/>} />
             <Route path="/Moviepage" element={<Moviepage />} />
             <Route path="/SeatSelection" element={<SeatSelection/>}/>
           </Routes>

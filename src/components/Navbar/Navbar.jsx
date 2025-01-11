@@ -39,8 +39,8 @@ const Navbar = ({ isLoggedIn }) => {
             </div>
           ) : (
             <div className="auth-buttons">
-              <Link to="/Signup">
-                <button className="login-button">LOGIN</button>
+              <Link to="/SignIn">
+                <button className="login-button">SIGNIN</button>
               </Link>
               <Link to="/RegistrationForm">
                 <button className="signup-button">SIGN UP</button>
