@@ -12,8 +12,8 @@ import ShowtimeManagement from './Pages/showtimeMG';
 import ContactUS from './components/ContactUS/Contactus';
 import TheatreManage from './components/TheatreManage/TheatreManage';
 import AdminDash from './components/AdminDashboard/AdminDash';
-import Payments from './Pages/Payments';
 import Moviemanagement from './Pages/Moviemanagement';
+import Payments from './components/PaymentSection/Payments';
 
 
 const App = () => {
