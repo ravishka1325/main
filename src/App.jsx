@@ -7,11 +7,11 @@ import Footer from './components/Footer/Footer';
 import RegistrationForm from './components/RegistrationForm/RegistrationForm';
 import Moviepage from './Pages/MoviePage';
 import SeatSelection from './components/MovieSelectionPage/SeatSelection';
-import AdminDash from './Pages/AdminDash';
 import SignIn from './components/Signinform/Signin';
 import ShowtimeManagement from './Pages/showtimeMG';
 import ContactUS from './components/ContactUS/Contactus';
 import TheatreManage from './components/TheatreManage/TheatreManage';
+import AdminDash from './components/AdminDashboard/AdminDash';
 
 
 const App = () => {
