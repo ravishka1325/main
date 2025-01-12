@@ -7,7 +7,6 @@ body {
 .movie-slider {
   width: 75%; 
   margin: 0 auto;  
-  background-color: #1f1f1f; 
   animation: fadeIn 1s ease-in;
 }
 
