@@ -1,13 +1,13 @@
 const PromoCode = () => {
-    return (
-      <div className="section">
-        <h2 className="title">Have A Promo Code?</h2>
-        <div className="promo-code-input">
-          <input type="text" placeholder="Have A Promo Code?" className="input" />
-          <button className="button button-primary">Submit</button>
-        </div>
+  return (
+    <div className="section">
+      <hr />
+      <h2 className="title">Have A Promo Code?</h2>
+      <div className="promo-code-input">
+        <input type="text" placeholder="Have A Promo Code?" className="input" />
+        <button className="button button-primary">Submit</button>
       </div>
-    );
-  };
-  export default PromoCode;
-  
+    </div>
+  );
+};
+export default PromoCode;

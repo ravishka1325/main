@@ -12,7 +12,7 @@ const MovieListSearchBar = () => {
 
   return (
     <div className="Searchbar-container">
-      <div className="search-bar">
+      <div className="m-search-bar">
         <input
           type="text"
           placeholder="Search Movies"
