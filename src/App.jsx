@@ -11,6 +11,9 @@ import SignIn from './components/Signinform/Signin';
 import ShowtimeManagement from './Pages/showtimeMG';
 import ContactUS from './components/ContactUS/Contactus';
 import TheatreManage from './components/TheatreManage/TheatreManage';
+import AdminDash from './components/AdminDashboard/AdminDash';
+import Payments from './Pages/Payments';
+import Moviemanagement from './Pages/Moviemanagement';
 
 
 const App = () => {
@@ -31,7 +34,7 @@ const App = () => {
             <Route path="/Contactus" element={<ContactUS/>}/>
             <Route path="/TheatreManage" element={<TheatreManage/>}/>
             <Route path="/pay" element={<Payments/>}/>
-            <Route path="/Moviemanagement" element={<Moviemanagement />} />
+            <Route path="/Moviemanagement" element={<Moviemanagement/>} />
           </Routes>
           <Footer/>
         </div>
