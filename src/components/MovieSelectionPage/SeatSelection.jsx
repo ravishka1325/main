@@ -42,7 +42,7 @@ const SeatSelection = () => {
 
   // Handlers for buttons
   const handleContinue = () => {
-    navigate("/payment", {
+    navigate("/pay", {
       state: {
         selectedSeats,
         totalPrice: calculatePrice,

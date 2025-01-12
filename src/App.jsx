@@ -12,6 +12,7 @@ import SignIn from './components/Signinform/Signin';
 import ShowtimeManagement from './Pages/showtimeMG';
 import ContactUS from './components/ContactUS/Contactus';
 import TheatreManage from './components/TheatreManage/TheatreManage';
+import Payments from './Pages/Payments';
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
             <Route path="/showtimemgr" element={<ShowtimeManagement/>}/>
             <Route path="/Contactus" element={<ContactUS/>}/>
             <Route path="/TheatreManage" element={<TheatreManage/>}/>
+            <Route path="/pay" element={<Payments/>}/>
           </Routes>
           <Footer/>
         </div>

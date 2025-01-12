@@ -14,19 +14,19 @@ const AdminDash = () => {
         navigate('/showtimemgr');
         break;
       case 'add-movie':
-        console.log('Add Movie clicked');
+        navigate('Add Movie clicked');
         break;
       case 'add-theatre':
-        console.log('Add Theatre clicked');
+        navigate('/TheatreManage');
         break;
       case 'list-showtimes':
-        console.log('List Showtimes clicked');
+        navigate('List Showtimes clicked');
         break;
       case 'list-movies':
-        console.log('List Movies clicked');
+        navigate('List Movies clicked');
         break;
       case 'list-theatres':
-        console.log('List Theatres clicked');
+        navigate('List Theatres clicked');
         break;
       default:
         console.log(`Unknown action: ${action}`);
