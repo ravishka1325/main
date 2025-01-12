@@ -18,7 +18,7 @@ const MovieListSearchBar = () => {
           placeholder="Search Movies"
           value={searchTitle}
           onChange={(e) => setSearchTitle(e.target.value)}
-          className="search-input"
+          className="search-input-m"
         />
         <select
           value={genre}
