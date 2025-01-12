@@ -1,0 +1,117 @@
+.payment-page {
+    --charcoal: #1A1A1A;  
+    --light-gray: #c8c8c9;
+    --medium-gray: #8a898c;
+    --deep-red: #8b0000;  
+    --input-gray: #E8E8E8;  
+    --white: #ffffff;
+    background-color: var(--charcoal);
+    color: var(--white);
+    font-family: system-ui, -apple-system, sans-serif;
+    padding: 2rem 1rem;  
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .payment-container {
+    max-width: 500px;  
+    margin: 0 auto;
+  }
+  
+  .nav {
+    margin-bottom: 2rem;
+    color: var(--light-gray);
+    font-size: 0.875rem; 
+  }
+  
+  .title {
+    font-size: 1.25rem;  
+    font-weight: 600;   
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 1rem;      
+    border-radius: 8px; 
+    border: none;     
+    background-color: var(--input-gray);
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    color: var(--charcoal);
+    font-size: 0.875rem; 
+  }
+  
+  .button {
+    width: 100%;
+    padding: 1rem;     
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .button-primary {
+    background-color: var(--deep-red);
+    color: var(--white);
+  }
+  
+  .payment-method {
+    background-color: var(--white);
+    padding: 1.25rem;  
+    border-radius: 8px; 
+    margin-bottom: 1rem;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+  
+  .payment-method.paypal {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 60px;      
+  }
+  
+  .payment-method.credit-card {
+    padding: 1.5rem;   
+  }
+  
+  .promo-code-input {
+    display: flex;
+    gap: 0.75rem;       
+  }
+  
+  .promo-code-input .input {
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
+  
+  .promo-code-input .button {
+    width: auto;        
+    min-width: 100px;   
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+  
+  .payment-options {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  .payment-options::after {
+    content: 'or';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--charcoal);
+    padding: 0 1rem;
+    color: var(--medium-gray);
+    font-size: 0.875rem;
+    top: calc(50% - 0.5rem);
+  }
