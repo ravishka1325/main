@@ -15,6 +15,7 @@ import AdminDash from './components/AdminDashboard/AdminDash';
 import Moviemanagement from './Pages/Moviemanagement';
 import Payments from './components/PaymentSection/Payments';
 import BookingConfirmation from './components/BookingConfirm/BookingConfirm';
+import UpcomingBookingDetail from './components/UpcomingBookingDetail/UpcomingBookingDetail';
 
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
             <Route path="/pay" element={<Payments/>}/>
             <Route path="/Moviemanagement" element={<Moviemanagement/>} />
             <Route path="/BookingConfirmation" element={<BookingConfirmation/>} />
+            <Route path="/UpComingBooking" element={<UpcomingBookingDetail/>} />
           </Routes>
           <Footer/>
         </div>

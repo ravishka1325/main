@@ -1,0 +1,64 @@
+.booking-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.title-rumba{
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+.title a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.booking-content {
+    flex: 1;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.booking-heading {
+    font-size: 2em;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.movie-info {
+    margin-bottom: 2rem;
+}
+
+.movie-title {
+    font-size: 1.8em;
+    margin-bottom: 0;
+}
+
+.ticket-details, .customer-info {
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.note {
+    color: #ccc;
+    font-size: 0.9em;
+    margin-top: 2rem;
+}
+
+.label {
+    color: #ccc;
+    margin-right: 0.5rem;
+}
