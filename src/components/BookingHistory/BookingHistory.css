@@ -69,8 +69,12 @@
   }
   
   .bkh-arrow {
-    font-size: 1.5rem;
-    opacity: 0.7;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #aaa;
+    border-right: 2px solid #aaa;
+    transform: rotate(45deg);
+    margin-right: 8px;
   }
   
   @media (max-width: 768px) {
