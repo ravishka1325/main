@@ -1,4 +1,4 @@
-/* General Styles */
+
 .dashboard {
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@
 .admincontent main{
   width: 70%;
 }
-/* Sidebar Styles */
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -47,7 +47,7 @@
   background-color: #333;
 }
 
-/* Main Content */
+
 .main-content {
   flex-grow: 1;
   padding: 2rem;
@@ -79,7 +79,7 @@ header h1 {
   font-size: 1.2rem;
 }
 
-/* Quick Insight Section */
+
 .quick-insight-container {
   margin-bottom: 2rem;
   padding: 1rem;
@@ -113,7 +113,7 @@ header h1 {
   color: #000000;
 }
 
-/* Quick Links Section */
+
 .quick-links-container {
   padding: 1rem;
   border-radius: 10px;

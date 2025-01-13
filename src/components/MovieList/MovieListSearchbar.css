@@ -47,7 +47,6 @@
   background-color: #a30a1b;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .search-bar {
     gap: 12px; 

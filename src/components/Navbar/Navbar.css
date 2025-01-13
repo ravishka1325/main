@@ -37,7 +37,7 @@
     padding-left: c; 
   }
   .nav-links a.active {
-    color: rgb(255, 0, 0); /* Color for the active link */
+    color: rgb(255, 0, 0); 
   }
   @media (min-width: 768px) {
     .nav-links {
@@ -109,8 +109,7 @@
     text-decoration: none;
 }
 
-/* profile select */
-/* Add these new styles for the profile section */
+
 .profile-section {
   position: absolute;
   right: 24px;
