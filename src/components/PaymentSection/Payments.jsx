@@ -1,9 +1,9 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import PromoCode from '../components/PaymentSection/PromoCode';
-import PaymentMethod from '../components/PaymentSection/PaymentMethod';
-import UserDetails from '../components/PaymentSection/UserDetails';
-import '../components/PaymentSection/PaymentMethod.css';
+import PromoCode from './PromoCode.jsx';
+import PaymentMethod from './PaymentMethod.jsx'; 
+import UserDetails from './UserDetails.jsx';
+import './PaymentMethod.css';
 
 const Payments = () => {
   const location = useLocation();
@@ -41,4 +41,5 @@ const Payments = () => {
     </div>
   );
 };
+
 export default Payments;

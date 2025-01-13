@@ -108,6 +108,7 @@ button:hover {
     border: #731010;
     --bs-btn-active-bg: #7e0f0f ;
     gap: 10px;
+    width: max-content;
 }
 .icon {
     width: 20px;
