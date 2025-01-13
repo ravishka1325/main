@@ -17,6 +17,7 @@ import Payments from './components/PaymentSection/Payments';
 import BookingConfirmation from './components/BookingConfirm/BookingConfirm';
 import UpcomingBookingDetail from './components/UpcomingBookingDetail/UpcomingBookingDetail';
 import ChangePasswordForm from './components/ChangePassword/ChangePasswordForm';
+import BookingHistoryP from './Pages/BookingHistoryPage';
 
 
 const App = () => {
@@ -41,6 +42,7 @@ const App = () => {
             <Route path="/BookingConfirmation" element={<BookingConfirmation/>} />
             <Route path="/UpComingBooking" element={<UpcomingBookingDetail/>} />
             <Route path="/ChangePasswordForm" element={<ChangePasswordForm/>} />
+            <Route path="/BookingHistoryPage" element={<BookingHistoryP/>} />
           </Routes>
           <Footer/>
         </div>
