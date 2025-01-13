@@ -14,6 +14,7 @@ import TheatreManage from './components/TheatreManage/TheatreManage';
 import AdminDash from './components/AdminDashboard/AdminDash';
 import Moviemanagement from './Pages/Moviemanagement';
 import Payments from './components/PaymentSection/Payments';
+import BookingConfirmation from './components/BookingConfirm/BookingConfirm';
 
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
             <Route path="/TheatreManage" element={<TheatreManage/>}/>
             <Route path="/pay" element={<Payments/>}/>
             <Route path="/Moviemanagement" element={<Moviemanagement/>} />
+            <Route path="/BookingConfirmation" element={<BookingConfirmation/>} />
           </Routes>
           <Footer/>
         </div>
