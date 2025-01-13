@@ -1,0 +1,77 @@
+  
+  .container-i {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  
+  .upcoming-movie {
+    padding: 4rem 0;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .title-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 3rem;
+  }
+  
+  .bookings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .booking-card {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .booking-card:hover {
+    transform: translateX(5px);
+  }
+  
+  .movie-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cinema, .date {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+  }
+  
+  .arrow {
+    font-size: 1.5rem;
+    opacity: 0.7;
+  }
+  
+  @media (max-width: 768px) {
+    .upcoming-movie {
+        padding: 2rem 0;
+    }
+  
+    .title {
+        font-size: 2rem;
+    }
+  
+    .booking-card {
+        padding: 1rem;
+    }
+  }
