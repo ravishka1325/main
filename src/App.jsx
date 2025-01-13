@@ -16,6 +16,7 @@ import Moviemanagement from './Pages/Moviemanagement';
 import Payments from './components/PaymentSection/Payments';
 import BookingConfirmation from './components/BookingConfirm/BookingConfirm';
 import UpcomingBookingDetail from './components/UpcomingBookingDetail/UpcomingBookingDetail';
+import ChangePasswordForm from './components/ChangePassword/ChangePasswordForm';
 
 
 const App = () => {
@@ -39,6 +40,7 @@ const App = () => {
             <Route path="/Moviemanagement" element={<Moviemanagement/>} />
             <Route path="/BookingConfirmation" element={<BookingConfirmation/>} />
             <Route path="/UpComingBooking" element={<UpcomingBookingDetail/>} />
+            <Route path="/ChangePasswordForm" element={<ChangePasswordForm/>} />
           </Routes>
           <Footer/>
         </div>
